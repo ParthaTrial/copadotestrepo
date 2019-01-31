@@ -1,0 +1,16 @@
+// Trigger Code
+trigger Customer_After_Insert on APEX_Customer__c (after update) {
+   List InvoiceList = new List();
+   
+   for (APEX_Customer__c objCustomer: Trigger.new) {
+      
+      if (objCustomer.APEX_Customer_Status__c == 'Active') {
+         APEX_Invoice__c objInvoice = new APEX_Invoice__c();
+         objInvoice.APEX_Status__c = 'Pending';
+         InvoiceList.add(objInvoice);
+      }
+   }
+   
+   // DML to insert the Invoice List in SFDC
+   insert InvoiceList;
+}
