@@ -7,5 +7,4 @@ contact.addError(“Hey! You are not authorized to perform this action.”);
 }
 }
 **/
-
 }
