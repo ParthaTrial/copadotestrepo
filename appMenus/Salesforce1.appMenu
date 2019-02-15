@@ -9,10 +9,6 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>News</name>
-        <type>StandardAppMenuItem</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>Dashboards</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
@@ -21,11 +17,19 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Notes</name>
-        <type>StandardAppMenuItem</type>
+        <name>Inspection</name>
+        <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
         <name>Search</name>
+        <type>StandardAppMenuItem</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>People</name>
+        <type>StandardAppMenuItem</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Groups</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
@@ -37,11 +41,11 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>People</name>
+        <name>ProcessInstanceWorkitem</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Groups</name>
+        <name>PendingInterviews</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
 </AppMenu>

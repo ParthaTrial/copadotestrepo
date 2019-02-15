@@ -80,6 +80,20 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Case_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(IsClosed, ROUND(ClosedDate - CreatedDate, 0), ROUND((NOW() - CreatedDate), 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ClosedDate</fullName>
         <trackTrending>false</trackTrending>
     </fields>
@@ -164,8 +178,15 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Status</fullName>
+        <fullName>SourceId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -246,4 +267,30 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWriteTransfer</sharingModel>
+    <webLinks>
+        <fullName>TIMBASURVEYS__Send_Survey_Case</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Survey</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if (&apos;{!JSENCODE(Case.ContactId)}&apos; == &apos;&apos;) {
+    alert(&apos;This case is not associated with any contact.&apos;);
+}else{
+    window.location = &quot;/apex/timbasurveys__collectionhub?cId={!URLENCODE(Case.ContactId)}&amp;caseId={!URLENCODE(Case.Id)}&amp;retURL=&quot; + encodeURIComponent(window.location);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TIMBASURVEYS__Send_Survey_To_Selected</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Survey To Selected</masterLabel>
+        <openType>sidebar</openType>
+        <page>TIMBASURVEYS__SendToCaseList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
 </CustomObject>

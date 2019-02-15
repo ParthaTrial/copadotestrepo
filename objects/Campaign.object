@@ -164,8 +164,6 @@
         <columns>CAMPAIGN.END_DATE</columns>
         <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
         <columns>CAMPAIGN.STATUS</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CAMPAIGN.ACTIVE</field>

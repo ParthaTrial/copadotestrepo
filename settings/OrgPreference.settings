@@ -2,7 +2,7 @@
 <OrgPreferenceSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <preferences>
         <settingName>PathAssistantsEnabled</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>SocialProfilesEnable</settingName>
@@ -10,7 +10,7 @@
     </preferences>
     <preferences>
         <settingName>UpgradeInsecureRequestsPref</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>ReferrerPolicy</settingName>
@@ -26,7 +26,7 @@
     </preferences>
     <preferences>
         <settingName>AnalyticsSharingEnable</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>DisableParallelApexTesting</settingName>
@@ -54,10 +54,14 @@
     </preferences>
     <preferences>
         <settingName>XssProtection</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>ContentSniffingProtection</settingName>
+        <settingValue>true</settingValue>
+    </preferences>
+    <preferences>
+        <settingName>ScratchOrgManagementPref</settingName>
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
@@ -85,6 +89,10 @@
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
+        <settingName>TerritoryManagement2Enable</settingName>
+        <settingValue>false</settingValue>
+    </preferences>
+    <preferences>
         <settingName>UsersAreLightningOnly</settingName>
         <settingValue>false</settingValue>
     </preferences>
@@ -94,10 +102,6 @@
     </preferences>
     <preferences>
         <settingName>HstsSitesCommunities</settingName>
-        <settingValue>false</settingValue>
-    </preferences>
-    <preferences>
-        <settingName>CompileOnDeploy</settingName>
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
@@ -130,7 +134,7 @@
     </preferences>
     <preferences>
         <settingName>RedirectionWarning</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>VoiceEnabled</settingName>
@@ -162,7 +166,7 @@
     </preferences>
     <preferences>
         <settingName>NotesReservedPref01</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>ConsentManagementEnabled</settingName>
@@ -178,6 +182,6 @@
     </preferences>
     <preferences>
         <settingName>S1DesktopEnabled</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
 </OrgPreferenceSettings>

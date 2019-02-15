@@ -3,14 +3,17 @@
     <chatterMobile>
         <enablePushNotifications>true</enablePushNotifications>
     </chatterMobile>
+    <dashboardMobile>
+        <enableDashboardIPadApp>true</enableDashboardIPadApp>
+    </dashboardMobile>
     <salesforceMobile>
         <enableMobileLite>true</enableMobileLite>
         <enableUserToDeviceLinking>false</enableUserToDeviceLinking>
     </salesforceMobile>
     <touchMobile>
-        <enableTouchAppIPad>false</enableTouchAppIPad>
+        <enableTouchAppIPad>true</enableTouchAppIPad>
         <enableTouchAppIPhone>true</enableTouchAppIPhone>
-        <enableTouchBrowserIPad>true</enableTouchBrowserIPad>
+        <enableTouchBrowserIPad>false</enableTouchBrowserIPad>
         <enableVisualforceInTouch>false</enableVisualforceInTouch>
     </touchMobile>
 </MobileSettings>

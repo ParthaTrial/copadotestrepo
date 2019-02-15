@@ -35,13 +35,6 @@
     <enableFeeds>false</enableFeeds>
     <listViews>
         <fullName>MyActivities</fullName>
-        <columns>ACTIVITY_SUBTYPE</columns>
-        <columns>TASK.STATUS</columns>
-        <columns>TASK.SUBJECT</columns>
-        <columns>TASK.DUE_DATE</columns>
-        <columns>TASK.WHAT_NAME</columns>
-        <columns>TASK.WHO_NAME</columns>
-        <columns>EVENT.LOCATION</columns>
         <filterScope>Mine</filterScope>
         <label>My Activities</label>
     </listViews>
